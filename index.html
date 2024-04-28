@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEEDRA</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet">
+  <script
+    src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+  <!--================ Navbar starts ================-->
+  <nav class="navbar  h-[72px] shadow-md fixed top-0  z-[100] w-full bg-white">
+    <div
+      class="container h-full flex items-center justify-between md:px-0 px-2">
+      <a href="#">
+        <img src="./assets/logo.svg" alt="logo">
+      </a>
+
+      <ul class="md:flex hidden  items-center gap-[1rem]">
+        <li class="lg:ml-[2rem] ml-[1rem]"><a class="nav-link"
+            href="#products">ALL PRODUCTS</a></li>
+        <li><a href="#about" class="nav-link">ABOUT SEEDRA</a></li>
+        <li><a href="#blog" class="nav-link">OUR BLOG</a></li>
+        <li><a href="#contacts" class="nav-link">CONTACTS</a></li>
+        <li class="flex  items-center ml-[1rem]">
+          <a href="#">
+            <img src="./assets//facebook.svg" alt="facebook">
+          </a>
+          <a href="#">
+            <img src="./assets/instagramm.svg" alt="instagramm">
+          </a>
+        </li>
+
+        <li
+          class="flex items-center border h-[48px] px-[1rem] rounded-[71px] border-1 border-[#EFEFEF] search-panel">
+          <img src="./assets/icon_search.svg" alt="search">
+          <input class="outline-none border-none nav-link" type="text"
+            placeholder="Search...">
+        </li>
+
+      </ul>
+
+      <div class="flex items-center md:gap-3 gap-[1.4rem] cursor-pointer ml-2">
+        <img class="border border-1 border-[#EFEFEF] p-2 rounded-full"
+          src="./assets/heart.svg" alt="heart">
+        <img class="border border-1 border-[#EFEFEF] p-2 rounded-full"
+          src="./assets/cart.svg" alt="cart">
+        <img id="menu-btn" src="./assets/menu.svg"
+          class="md:hidden inline border border-1 border-[#EFEFEF] p-2 rounded-full"
+          alt="menu">
+      </div>
+
+    </div>
+  </nav>
+  <!--================ Navbar ends================ -->
+
+
+  <!-- Mobile Nav stars -->
+  <nav id="mobile-navbar"
+    class="fixed z-[3] top-[72px] right-[-100%] mobile-navbar h-[calc(100vh-72px)]  w-full backdrop-blur-sm bg-white/20 transition-all duration-300">
+    <div
+      class="mobile-navbar-content  flex flex-col gap-[2rem] p-[1rem] h-full w-[280px] ml-auto bg-white ">
+      <div
+        class="flex items-center border h-[48px] px-[1rem] rounded-[71px] border-1 border-[#EFEFEF]">
+        <img src="./assets/icon_search.svg" alt="search">
+        <input class="w-full outline-none border-none" type="text"
+          placeholder="Search...">
+      </div>
+
+
+      <ul class="flex flex-col my-[1rem]">
+        <li
+          class="py-3 px-4 rounded-[20px] hover:bg-slate-200/50 transition-all duration-200 ">
+          <a class="nav-link" href="#products">ALL
+            PRODUCTS</a>
+        </li>
+        <li
+          class="py-3 px-4 rounded-[20px] hover:bg-slate-200/50 transition-all duration-200 ">
+          <a href="#about" class="nav-link">ABOUT SEEDRA</a>
+        </li>
+        <li
+          class="py-3 px-4 rounded-[20px] hover:bg-slate-200/50 transition-all duration-200 ">
+          <a href="#blog" class="nav-link">OUR BLOG</a>
+        </li>
+        <li
+          class="py-3 px-4 rounded-[20px] hover:bg-slate-200/50 transition-all duration-200 ">
+          <a href="#contacts" class="nav-link">CONTACTS</a>
+        </li>
+
+        <li class="w-full h-[1px] bg-[#EFEFEF] my-3"></li>
+      </ul>
+
+
+      <div class="mt-auto">
+        <div class="w-full h-[1px] bg-[#EFEFEF] my-3"></div>
+
+        <div class="flex gap-[1rem] items-center ">
+          <a href="#">
+            <img src="./assets//facebook.svg" alt="facebook">
+          </a>
+          <a href="#">
+            <img src="./assets/instagramm.svg" alt="instagramm">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Mobile Nav ends -->
+
+
+  <!-- Hero section starts -->
+  <section
+    class="hero container  md:w-full w-[95%] flex md:flex-row flex-col-reverse items-center justify-between !px-[2.5rem] py-[2rem] min-h-[455px] mt-[100px] bg-[#EAF1EB] rounded-[24px]">
+    <div class="flex flex-col md:gap-[1rem] gap-2">
+      <h1
+        class="font-[600] md:text-[40px] lg:text-[48px] lg:leading-[54px] md:leading-[49px] text-[28px] leading-[36px] tracking-tight  text-[#1F2533]">
+        SEEDRA Basil Seeds for Indoor and Outdoor Planting</h1>
+      <p
+        class="text-[#1F2533] md:text-[16px] text-[14px] font-[300] md:max-w-[560px] w-full  leading-[28px]">
+        Be sure of our quality - the freshest batches of this season. Non-GMO,
+        Heirloom
+        - our seeds were tested and have the best germination ratings. Your easy
+        growing
+        experience is our guarantee
+      </p>
+
+      <h1 class="flex items-center gap-[1rem] ">
+        <img src="assets/fire.svg" alt="fire">
+        <span
+          class="font-[600] text-[42px] leading-[54px] text-[#1F2533]">$12.56</span>
+        <strike
+          class="font-[600] text-[22px] leading-[54px] text-[#70737C]">$15.56</strike>
+      </h1>
+
+      <div class="flex gap-[1rem] items-center">
+        <button
+          class="h-[51px] font-[500] px-[1.5rem] rounded-[8px] bg-[#359740] text-white">Add
+          to card</button>
+        <button
+          class="h-[51px] font-[500] px px-[1.5rem] rounded-[8px] text-[#359740] bg-white">Discover</button>
+      </div>
+
+    </div>
+    <img src="assets/imag1.png" class="md:max-w-[349px] md:w-full w-[188px] "
+      alt="hero-img">
+  </section>
+  <!-- Hero section ends -->
+
+  <!-- Sub section  starts-->
+  <section
+    class="container px-8 my-4 flex flex-col gap-2 items-center justify-center  bg-[#FFE62E17] h-[104px]">
+    <h1
+      class="text-[24px] text-center  leading-[31.5px] font-[600] tracking-[-2%] text-[#1F2533]">
+      We sell seeds</h1>
+    <p
+      class="text-[16px] text-center text-[#70737C]  font-[500] leading-[28.5px] tracking-[-2.5%]">
+      that
+      always sprout and gardening supplies which never break</p>
+  </section>
+  <!-- Sub section ends-->
+
+  <!-- ---------=-=-=--=--===Products Section starts---------=-=-=--=--=== -->
+  <section class="products my-[1rem]">
+    <div class=" container w-full flex items-center justify-between">
+      <h1 class="leading-[54px] text-[36px] font-semibold text-[#1F2533] py-7 ">
+        Our products.</h1>
+      <button
+        class="h-[51px] font-[500] border px-[1.5rem] rounded-[8px] text-[#359740] bg-white">View
+        all (12)</button>
+    </div>
+
+    <div class="container w-full overflow-x-auto">
+
+      <div
+        class="flex items-center md:gap-4 gap-2 w-[1110px] justify-between py-3">
+        <div
+          class="flex  items-center gap-2 border rounded-[8px]  md:h-[72px] h-[57px] px-[1rem] hover:bg-slate-200/40 cursor-pointer">
+          <img src="./assets/leaf.svg" alt="leaf">
+          <span
+            class="text-[14px] leading-[25px] font-normal text-[#1F2533]">ALL</span>
+        </div>
+
+        <div
+          class="flex  items-center gap-2 border rounded-[8px]  md:h-[72px] h-[57px] px-[1rem] hover:bg-slate-200/40 cursor-pointer">
+          <img src="./assets/leaf.svg" alt="leaf">
+          <span
+            class="text-[14px] leading-[25px] font-normal text-[#1F2533]">BUNDLES</span>
+        </div>
+        <div
+          class="flex  items-center gap-2 border rounded-[8px]  md:h-[72px] h-[57px] px-[1rem] hover:bg-slate-200/40 cursor-pointer">
+          <img src="./assets/leaf.svg" alt="leaf">
+          <span
+            class="text-[14px] leading-[25px] font-normal text-[#1F2533]">BUNDLES</span>
+        </div>
+        <div
+          class="flex  items-center gap-2 border rounded-[8px]  md:h-[72px] h-[57px] px-[1rem] hover:bg-slate-200/40 cursor-pointer">
+          <img src="./assets/leaf.svg" alt="leaf">
+          <span
+            class="text-[14px] leading-[25px] font-normal text-[#1F2533]">BUNDLES</span>
+        </div>
+        <div
+          class="flex  items-center gap-2 border rounded-[8px]  md:h-[72px] h-[57px] px-[1rem] hover:bg-slate-200/40 cursor-pointer">
+          <img src="./assets/leaf.svg" alt="leaf">
+          <span
+            class="text-[14px] leading-[25px] font-normal text-[#1F2533]">BUNDLES</span>
+        </div>
+        <div
+          class="flex  items-center gap-2 border rounded-[8px]  md:h-[72px] h-[57px] px-[1rem] hover:bg-slate-200/40 cursor-pointer">
+          <img src="./assets/leaf.svg" alt="leaf">
+          <span
+            class="text-[14px] leading-[25px] font-normal text-[#1F2533]">BUNDLES</span>
+        </div>
+        <div
+          class="flex  items-center gap-2 border rounded-[8px]  md:h-[72px] h-[57px] px-[1rem] hover:bg-slate-200/40 cursor-pointer">
+          <img src="./assets/leaf.svg" alt="leaf">
+          <span
+            class="text-[14px] leading-[25px] font-normal text-[#1F2533]">BUNDLES</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+
+      <!-- Product Card starts -->
+      <div class="p-4 relative flex flex-col gap-4 border rounded-lg">
+        <img class="w-full h-[294px] object-cover rounded-[12px]"
+          src="https://images.unsplash.com/photo-1613500788522-89c4d55bdd0e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNlZWRzfGVufDB8fDB8fHww"
+          alt="">
+        <div class="flex items-center gap-2">
+          <span class="flex items-center gap-0.5">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+          </span>
+          <span
+            class="text-[14px] leading-[24px] text-[#70737C] font-normal">(123)</span>
+        </div>
+
+        <p class="text-[16px] font-[500] leading-[25px] text-[#1F2533]">
+          Seedra
+          Cilantro Seeds for Planting Indoor and Outdoor
+        </p>
+        <div class="flex justify-between items-center">
+          <h1 class="leading-[54px] font-smibold text-[28px]">$12.56</h1>
+          <img class="p-2 border rounded-sm cursor-pointer"
+            src="./assets/cart.svg" alt="cart">
+        </div>
+
+        <img
+          class="p-2 border bg-white w-[40px] h-[40px] rounded-full absolute right-4 top-[0.5rem] cursor-pointer"
+          src="./assets/heart.svg" alt="cart">
+      </div>
+      <!-- Product Card ends -->
+
+      <!-- Product Card starts -->
+      <div class="p-4 relative flex flex-col gap-4 border rounded-lg">
+        <img class="w-full h-[294px] object-cover rounded-[12px]"
+          src="https://images.unsplash.com/photo-1613500788522-89c4d55bdd0e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNlZWRzfGVufDB8fDB8fHww"
+          alt="">
+        <div class="flex items-center gap-2">
+          <span class="flex items-center gap-0.5">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+          </span>
+          <span
+            class="text-[14px] leading-[24px] text-[#70737C] font-normal">(123)</span>
+        </div>
+
+        <p class="text-[16px] font-[500] leading-[25px] text-[#1F2533]">
+          Seedra
+          Cilantro Seeds for Planting Indoor and Outdoor
+        </p>
+        <div class="flex justify-between items-center">
+          <h1 class="leading-[54px] font-smibold text-[28px]">$12.56</h1>
+          <img class="p-2 border rounded-sm cursor-pointer"
+            src="./assets/cart.svg" alt="cart">
+        </div>
+
+        <img
+          class="p-2 border bg-white w-[40px] h-[40px] rounded-full absolute right-4 top-[0.5rem] cursor-pointer"
+          src="./assets/heart.svg" alt="cart">
+      </div>
+      <!-- Product Card ends -->
+
+      <!-- Product Card starts -->
+      <div class="p-4 relative flex flex-col gap-4 border rounded-lg">
+        <img class="w-full h-[294px] object-cover rounded-[12px]"
+          src="https://images.unsplash.com/photo-1613500788522-89c4d55bdd0e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNlZWRzfGVufDB8fDB8fHww"
+          alt="">
+        <div class="flex items-center gap-2">
+          <span class="flex items-center gap-0.5">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+          </span>
+          <span
+            class="text-[14px] leading-[24px] text-[#70737C] font-normal">(123)</span>
+        </div>
+
+        <p class="text-[16px] font-[500] leading-[25px] text-[#1F2533]">
+          Seedra
+          Cilantro Seeds for Planting Indoor and Outdoor
+        </p>
+        <div class="flex justify-between items-center">
+          <h1 class="leading-[54px] font-smibold text-[28px]">$12.56</h1>
+          <img class="p-2 border rounded-sm cursor-pointer"
+            src="./assets/cart.svg" alt="cart">
+        </div>
+
+        <img
+          class="p-2 border bg-white w-[40px] h-[40px] rounded-full absolute right-4 top-[0.5rem] cursor-pointer"
+          src="./assets/heart.svg" alt="cart">
+      </div>
+      <!-- Product Card ends -->
+
+      <!-- Product Card starts -->
+      <div class="p-4 relative flex flex-col gap-4 border rounded-lg">
+        <img class="w-full h-[294px] object-cover rounded-[12px]"
+          src="https://images.unsplash.com/photo-1613500788522-89c4d55bdd0e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNlZWRzfGVufDB8fDB8fHww"
+          alt="">
+        <div class="flex items-center gap-2">
+          <span class="flex items-center gap-0.5">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+          </span>
+          <span
+            class="text-[14px] leading-[24px] text-[#70737C] font-normal">(123)</span>
+        </div>
+
+        <p class="text-[16px] font-[500] leading-[25px] text-[#1F2533]">
+          Seedra
+          Cilantro Seeds for Planting Indoor and Outdoor
+        </p>
+        <div class="flex justify-between items-center">
+          <h1 class="leading-[54px] font-smibold text-[28px]">$12.56</h1>
+          <img class="p-2 border rounded-sm cursor-pointer"
+            src="./assets/cart.svg" alt="cart">
+        </div>
+
+        <img
+          class="p-2 border bg-white w-[40px] h-[40px] rounded-full absolute right-4 top-[0.5rem] cursor-pointer"
+          src="./assets/heart.svg" alt="cart">
+      </div>
+      <!-- Product Card ends -->
+
+      <!-- Product Card starts -->
+      <div class="p-4 relative flex flex-col gap-4 border rounded-lg">
+        <img class="w-full h-[294px] object-cover rounded-[12px]"
+          src="https://images.unsplash.com/photo-1613500788522-89c4d55bdd0e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNlZWRzfGVufDB8fDB8fHww"
+          alt="">
+        <div class="flex items-center gap-2">
+          <span class="flex items-center gap-0.5">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+          </span>
+          <span
+            class="text-[14px] leading-[24px] text-[#70737C] font-normal">(123)</span>
+        </div>
+
+        <p class="text-[16px] font-[500] leading-[25px] text-[#1F2533]">
+          Seedra
+          Cilantro Seeds for Planting Indoor and Outdoor
+        </p>
+        <div class="flex justify-between items-center">
+          <h1 class="leading-[54px] font-smibold text-[28px]">$12.56</h1>
+          <img class="p-2 border rounded-sm cursor-pointer"
+            src="./assets/cart.svg" alt="cart">
+        </div>
+
+        <img
+          class="p-2 border bg-white w-[40px] h-[40px] rounded-full absolute right-4 top-[0.5rem] cursor-pointer"
+          src="./assets/heart.svg" alt="cart">
+      </div>
+      <!-- Product Card ends -->
+
+      <!-- Product Card starts -->
+      <div class="p-4 relative flex flex-col gap-4 border rounded-lg">
+        <img class="w-full h-[294px] object-cover rounded-[12px]"
+          src="https://images.unsplash.com/photo-1613500788522-89c4d55bdd0e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNlZWRzfGVufDB8fDB8fHww"
+          alt="">
+        <div class="flex items-center gap-2">
+          <span class="flex items-center gap-0.5">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+            <img src="./assets/star.svg" alt="star">
+          </span>
+          <span
+            class="text-[14px] leading-[24px] text-[#70737C] font-normal">(123)</span>
+        </div>
+
+        <p class="text-[16px] font-[500] leading-[25px] text-[#1F2533]">
+          Seedra
+          Cilantro Seeds for Planting Indoor and Outdoor
+        </p>
+        <div class="flex justify-between items-center">
+          <h1 class="leading-[54px] font-smibold text-[28px]">$12.56</h1>
+          <img class="p-2 border rounded-sm cursor-pointer"
+            src="./assets/cart.svg" alt="cart">
+        </div>
+
+        <img
+          class="p-2 border bg-white w-[40px] h-[40px] rounded-full absolute right-4 top-[0.5rem] cursor-pointer"
+          src="./assets/heart.svg" alt="cart">
+      </div>
+      <!-- Product Card ends -->
+
+    </div>
+  </section>
+  <!-----------=-=-=--=--=== Products Section ends---------=-=-=--=--=== -->
+
+  <!--================ Our blog section starts================ -->
+  <section class="container">
+    <h1 class="leading-[54px] text-[36px] font-semibold text-[#1F2533] py-7 ">
+      Our Blog.</h1>
+
+    <div class="grid md:grid-cols-3 md:grid-rows-2  grid-cols-2  gap-2">
+
+      <!-- Blog card starts -->
+      <div
+        class="bg-[#EAF1EB] relative col-span-2 flex gap-4  min-h-[300px] rounded-[12px] w-full p-4">
+
+        <div class="flex flex-col max-w-[401px] gap-4 items-start">
+
+          <div
+            class="leading-[25px] text-[14px] text-[#70737C] flex gap-2 font-normal">
+            <img src="./assets/clock-three.svg" alt="clock">
+            12.09.2021
+          </div>
+          <h1
+            class="leading-[31px] text-[24px] text-[#1F2533] font-[600] tracking-[-2%]">
+            How to plant spinach correctly in winter</h1>
+
+          <p class="leading-[25px] text-[14px] text-[#70737C] font-normal">
+            In most areas, successive sowing can be done from early spring until
+            early
+            winter, but more often during hotter months...
+          </p>
+
+          <button
+            class="h-[51px] font-[500] px px-[1.5rem] rounded-[8px] text-[#359740] bg-white">
+            Read
+          </button>
+        </div>
+
+        <img class="w-full lg:max-w-[294px] max-w-[150px] absolute right-0 bottom-0"
+          src="./assets/image2.png" alt="image2">
+      </div>
+      <!-- Blog card ends -->
+
+      <!-- Blog card starts -->
+      <div
+        class="bg-[#EFF2F8] relative sm:row-span-2  sm:col-span-1 col-span-2  row-span-1 flex flex-col gap-2  min-h-[300px] rounded-[12px] w-full p-4">
+        <div class="flex flex-col max-w-[401px] gap-4 items-start">
+
+          <div
+            class="leading-[25px] text-[14px] text-[#70737C] flex gap-2 font-normal">
+            <img src="./assets/clock-three.svg" alt="clock">
+            12.09.2021
+          </div>
+          <h1
+            class="leading-[31px] text-[24px] text-[#1F2533] font-[600] tracking-[-2%]">
+            How to plant spinach correctly in winter</h1>
+
+          <p class="leading-[25px] text-[14px] text-[#70737C] font-normal">
+            In most areas, successive sowing can be done from early spring until
+            early
+            winter, but more often during hotter months...
+          </p>
+
+          <button
+            class="h-[51px] font-[500] px px-[1.5rem] rounded-[8px] text-[#359740] bg-white">
+            Read
+          </button>
+        </div>
+        <img class="w-full sm:block hidden lg:max-w-[294px] max-w-[150px] absolute bottom-0 right-0"
+          src="./assets/female-gardener-holding-wicker-basket-with-strawberries 1.png"
+          alt="image2">
+      </div>
+      <!-- Blog card ends -->
+
+      <!-- Blog card starts -->
+      <div
+        class="bg-[#EFF2F8] relative sm:col-span-1 col-span-2  flex flex-col gap-1 min-h-[300px] rounded-[12px] w-full p-4">
+        <div class="flex flex-col max-w-[401px] gap-4 items-start">
+          <div
+            class="leading-[25px] text-[14px] text-[#70737C] flex gap-2 font-normal">
+            <img src="./assets/clock-three.svg" alt="clock">
+            12.09.2021
+          </div>
+          <h1
+            class="leading-[31px] text-[24px] text-[#1F2533] font-[600] tracking-[-2%]">
+            How to plant spinach correctly in winter
+          </h1>
+          <button
+            class="h-[51px] font-[500] px px-[1.5rem] rounded-[8px] text-[#359740] bg-white">
+            Read
+          </button>
+        </div>
+        <img class="absolute  right-0 bottom-0 lg:w-[238px]  w-[150px]"
+          src="./assets/elipse.png" alt="image2">
+      </div>
+      <!-- Blog card ends -->
+      <!-- Blog card starts -->
+      <div
+        class="bg-[#EFF2F8] sm:col-span-1 col-span-2 relative  flex flex-col gap-1 min-h-[300px] rounded-[12px] w-full p-4">
+        <div class="flex flex-col max-w-[401px] gap-4 items-start">
+
+          <div
+            class="leading-[25px] text-[14px] text-[#70737C] flex gap-2 font-normal">
+            <img src="./assets/clock-three.svg" alt="clock">
+            12.09.2021
+          </div>
+          <h1
+            class="leading-[31px] text-[24px] text-[#1F2533] font-[600] tracking-[-2%]">
+            How to plant spinach correctly in winter</h1>
+
+          <button
+            class="h-[51px] font-[500] px px-[1.5rem] rounded-[8px] text-[#359740] bg-white">
+            Read
+          </button>
+        </div>
+        <img class="absolute  right-0 bottom-0 lg:w-[238px]  w-[150px]"
+          src="./assets/elipse.png" alt="image2">
+      </div>
+      <!-- Blog card ends -->
+
+    </div>
+  </section>
+  <!--================ Our blog section ends================ -->
+
+  <!--   Client section starts-->
+  <section class="flex flex-col">
+    <h1
+      class="leading-[54px] text-center text-[36px] font-semibold text-[#1F2533] py-10 ">
+      What out clients say
+    </h1>
+
+    <div class="carousel min-h-[400px]">
+      <div class="carousel-wrapper w-full h-full overflow-x-auto p-3">
+        <div
+          class="carousel-content min-w-[1200px] md:min-w-[1600px] h-full flex gap-[1rem]">
+
+          <!-- carousel Item starts -->
+          <div
+            class="carousel-item  flex flex-col gap-4 bg-[#FFFFFF] border border-[#EFEFEF] p-8 md:max-w-[540px] max-w-[350px]">
+
+            <div class=" w-full flex items-center gap-2">
+              <img class="w-[64px] h-[64px] object-cover rounded-full"
+                src="https://images.unsplash.com/photo-1713202294837-abbef9399ae4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8"
+                alt="">
+              <div class="flex flex-col gap-1">
+                <h2
+                  class="text-[18px] leading-[25px] text-[#1F2533] font-[500] ">
+                  Carla Samantoes-Diego</h2>
+                <p
+                  class="text-[14px] leading-[25px] text-[#70737C] font-normal ">
+                  12.09.2021</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1 mt-4">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+            </div>
+
+            <p class="font-[300] text-[16px] leading-[28px] text-[#1F2533]">
+              SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and
+              professional
+              instructions created by PhD Helga George
+              Be sure of our quality - the freshest batches of this season.
+              Non-GMO,
+              Heirloom
+              - our seeds were tested and have the best germination ratings.
+            </p>
+          </div>
+          <!-- carousel Item ends -->
+
+          <!-- carousel Item starts -->
+          <div
+            class="carousel-item  flex flex-col gap-4 bg-[#FFFFFF] border border-[#EFEFEF] p-8 md:max-w-[540px] max-w-[350px]">
+
+            <div class=" w-full flex items-center gap-2">
+              <img class="w-[64px] h-[64px] object-cover rounded-full"
+                src="https://images.unsplash.com/photo-1713202294837-abbef9399ae4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8"
+                alt="">
+              <div class="flex flex-col gap-1">
+                <h2
+                  class="text-[18px] leading-[25px] text-[#1F2533] font-[500] ">
+                  Carla Samantoes-Diego</h2>
+                <p
+                  class="text-[14px] leading-[25px] text-[#70737C] font-normal ">
+                  12.09.2021</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1 mt-4">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+            </div>
+
+            <p class="font-[300] text-[16px] leading-[28px] text-[#1F2533]">
+              SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and
+              professional
+              instructions created by PhD Helga George
+              Be sure of our quality - the freshest batches of this season.
+              Non-GMO,
+              Heirloom
+              - our seeds were tested and have the best germination ratings.
+            </p>
+          </div>
+          <!-- carousel Item ends -->
+
+          <!-- carousel Item starts -->
+          <div
+            class="carousel-item  flex flex-col gap-4 bg-[#FFFFFF] border border-[#EFEFEF] p-8 md:max-w-[540px] max-w-[350px]">
+
+            <div class=" w-full flex items-center gap-2">
+              <img class="w-[64px] h-[64px] object-cover rounded-full"
+                src="https://images.unsplash.com/photo-1713202294837-abbef9399ae4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8"
+                alt="">
+              <div class="flex flex-col gap-1">
+                <h2
+                  class="text-[18px] leading-[25px] text-[#1F2533] font-[500] ">
+                  Carla Samantoes-Diego</h2>
+                <p
+                  class="text-[14px] leading-[25px] text-[#70737C] font-normal ">
+                  12.09.2021</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1 mt-4">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+              <img src="./assets/star.svg" alt="star">
+            </div>
+
+            <p class="font-[300] text-[16px] leading-[28px] text-[#1F2533]">
+              SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and
+              professional
+              instructions created by PhD Helga George
+              Be sure of our quality - the freshest batches of this season.
+              Non-GMO,
+              Heirloom
+              - our seeds were tested and have the best germination ratings.
+            </p>
+          </div>
+          <!-- carousel Item ends -->
+
+        </div>
+      </div>
+
+      <div
+        class="carousel-indicators md:flex hidden gap-2 py-4 justify-center items-center">
+
+        <div
+          class="w-[35px] h-[6px] rounded-[30px] bg-[#359740] cursor-pointer hover:opacity-100">
+        </div>
+        <div
+          class="w-[35px] h-[6px] rounded-[30px] bg-[#359740] cursor-pointer opacity-30 hover:opacity-100 ">
+        </div>
+
+        <div
+          class="w-[35px] h-[6px] rounded-[30px] bg-[#359740] cursor-pointer opacity-30 hover:opacity-100">
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+  <!--   Client section ends-->
+
+
+  <!-- =========support section starts========= -->
+  <section class="support-section bg-[white] text-[#1F2533] sm:px-0 px-2">
+    <div class="container xl:px-0 px-4 flex lg:flex-row flex-col items-center justify-between  min-h-[658px] sm:gap-0 gap-4 py-4 px-0">
+      <div class="flex flex-col gap-[2rem] justify-center max-w-[521px]">
+        <h1 class="text-[36px] leading-[54px] font-[600] tracking-[-5%]">Seedra helps to grow fast and efficiant</h1>
+        <p class="text-[16px] leading-[24px] font-[300]">
+          SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and professional
+          instructions created by PhD Helga George
+          <br>
+          <br>
+
+          Be sure of our quality - the freshest batches of this season. Non-GMO,
+          Heirloom <br>
+          - our seeds were tested and have the best germination ratings.
+          Your easy growing experience is our guarantee <br>
+          Spinach commom culinary uses: salads, soups, smoothies, lasagne,
+          pizza,
+          pies,
+          risotto, and more
+          <br>
+          <br>
+          Proudly sourced in the USA - our garden seeds are grown, harvested,
+          and
+          packaged <br>
+          in the USA. We support local farmers and are happy to produce this
+          American-made product
+        </p>
+      </div>
+
+      <div  class="image-frame sm:min-w-[528px] min-w-[350px]  sm:min-h-[528px]  min-h-[350px] ">
+        <img class="sm:!w-[466px] sm:!h-[466px] !h-[310px] !w-[310px]  object-cover left-[22px] top-[22px] rounded-full absolute !z-[1] sm:top-[33px] sm:left-[33px]"
+          src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJ1aXRzfGVufDB8fDB8fHww"
+          alt="">
+      </div>
+    </div>
+
+  </section>
+  <!--========= support section ends =========-->
+
+
+
+
+  <!-- ///////////Footer starts/////////// -->
+  <footer class="min-h-[172px] mt-4 bg-[#BDBDBD40] p-[3rem]">
+    <div class="container h-full text-[#70737C] flex flex-col gap-8">
+  
+      <div class="foter flex lg:gap-[3rem] flex-wrap md:justify-between justify-center md:gap-[2rem] gap-[1rem] items-center">
+        <h1 class="hover:text-[#359740] cursor-pointer">ALL PRODUCTS</h1>
+        <div class="w-[1px] h-[20px] bg-[#70737C]"></div>
+        <h1 class="text-[#70737C] hover:text-[#359740] cursor-pointer">ABOUT SEEDRA</h1>
+        <div class="w-[1px] h-[20px] bg-[#70737C] "></div>
+        <h1 class="text-[#70737C] hover:text-[#359740] cursor-pointer">OUR BLOG</h1>
+        <img class="md:order-0 order-[-1]" src="./assets/logo.svg" alt="">
+        <h1 class="text-[#70737C] hover:text-[#359740] cursor-pointer">Terms&Conditions</h1>
+        <div class="w-[1px] h-[20px] bg-[#70737C]"></div>
+        <h1 class="text-[#70737C] hover:text-[#359740] cursor-pointer">Privacy Policy</h1>
+      </div>
+  
+      <div class="w-full h-[1px] bg-[#359740] opacity-30"></div>
+  
+      <div class="flex gap-[1rem] justify-between">
+        <div class="flex items-center gap-[1rem]">
+          <img class="w-[24px] h-[24px]" src="./assets/instagramm.svg" alt="">
+          <img class="w-[24px] h-[24px]" src="./assets/facebook.svg" alt="">
+        </div>
+  
+        <h1 class="text-[#70737C]">All rights reserved</h1>
+      </div>
+  
+  
+  
+  
+    </div>
+  </footer>
+  <!-- ///////////Footer ends/////////// -->
+  
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
